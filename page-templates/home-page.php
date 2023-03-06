@@ -24,17 +24,20 @@
 $banner_display_section = get_field( 'banner_display_section' ) ?? true;
 $banner_section = get_field( 'banner_section' );
 
+$cta_display_section = get_field( 'we_live_together_display_section' );
+$cta = get_field( 'we_live_together_as_one' );
 
-echo "<pre>";
-var_dump($banner_section);
-echo "</pre>";
+
+//echo "<pre>";
+//var_dump($banner_section);
+//echo "</pre>";
 
 get_header();
 ?>
 
-    <div class="main-content">
+    <main class="main-content">
         <?php
-            if ($banner_display_section)
+            if ( $banner_display_section )
             {
                 get_template_part(
                     'template-parts/components/home-page-banner',
@@ -42,11 +45,17 @@ get_header();
                     array( "data" => $banner_section )
                 );
             }
+
+            if ( $cta_display_section )
+            {
+                get_template_part(
+                    'template-parts/components/cta',
+                    '',
+                    array( "data" => $cta )
+                );
+            }
         ?>
-
-
-
-    </div>
+    </main>
 
 <?php
 get_footer();
