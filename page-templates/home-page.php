@@ -30,6 +30,8 @@ $cta = get_field( 'we_live_together_as_one' );
 $background_img_display_section = get_field( 'background_image_display_section' );
 $background_img = get_field( 'background_image' );
 
+$about_us_display_section = get_field( 'about_us_display_section' );
+$about_us = get_field( 'about_us' );
 
 //echo "<pre>";
 //var_dump($banner_section);
@@ -63,6 +65,14 @@ get_header();
                     'template-parts/components/background_image',
                     '',
                 array( "data" => $background_img )
+                );
+            }
+
+            if ( $about_us_display_section ) {
+                get_template_part(
+                    'template-parts/components/about_us',
+                    '',
+                    array( "data" => $about_us )
                 );
             }
         ?>

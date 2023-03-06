@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
 .site-header .header-wrapper {
   display: flex;
-  width: 97%;
+  width: 90%;
   margin-left: auto;
 }
 .site-header .header-wrapper a, .site-header .header-wrapper .site-title {
@@ -109,7 +109,7 @@
   }
   .site-footer .footer-content .footer-content__text {
     padding: 50px 0px;
-    width: 95%;
+    width: 90%;
   }
 }
 .site-footer .google-map-container {
@@ -118,7 +118,7 @@
 
 .banner {
   display: flex;
-  width: 97%;
+  width: 90%;
   margin: auto;
   font-family: "Poppins", serif;
 }
@@ -166,6 +166,11 @@
 .banner .banner-title {
   font-size: 7rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 1200px) {
+  .banner .banner-title {
+    font-size: 5rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .banner .banner-title {
@@ -228,7 +233,7 @@
 }
 @media only screen and (max-width: 767px) {
   .homepage-cta {
-    width: 97%;
+    width: 90%;
   }
 }
 
@@ -238,9 +243,40 @@
   height: auto;
 }
 
-html {
-  max-width: 1440px;
+.homepage-about-us {
+  width: 80%;
   margin: auto;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 60px;
+  margin-top: 64px;
+  display: flex;
+}
+.homepage-about-us > * {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: "Poppins", serif;
+}
+.homepage-about-us-text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.homepage-about-us-text-wrapper h3 {
+  font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+  .homepage-about-us-text-wrapper {
+    justify-content: flex-start;
+    text-align: initial;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .homepage-about-us {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
 }
 
 body {

@@ -2,7 +2,7 @@
 
 .banner {
   display: flex;
-  width: 97%;
+  width: 90%;
   margin: auto;
   font-family: 'Poppins', serif;
 
@@ -48,6 +48,10 @@
   & .banner-title {
     font-size: 7rem;
     font-weight: 700;
+
+    @media #{v.$media_desktop} {
+      font-size: 5rem;
+    }
     
     @media #{v.$media_tablet} {
       font-size: 4rem;
