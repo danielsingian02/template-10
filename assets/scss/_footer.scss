@@ -5,6 +5,7 @@
 
   & .custom-logo {
     max-width: 125px;
+    width: 100%;
   }
 
   .footer-content {
@@ -27,7 +28,8 @@
     & ul {
       display: flex;
       flex-direction: row;
-      column-gap: 25px;
+      flex-wrap: wrap;
+      gap: 25px;
       margin: 0;
       padding: 0;
 
