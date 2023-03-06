@@ -1,24 +1,5 @@
 @use "../variable" as v;
 
-.image-grid {
-  display: grid;
-  width: fit-content;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.first-image { grid-area: 1 / 1 / 4 / 5; }
-.second-image { grid-area: 3 / 3 / 6 / 7; }
-.third-image { grid-area: 5 / 2 / 8 / 6; }
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.3rem;
-}
-
 .banner {
   display: flex;
   width: 97%;
@@ -43,6 +24,25 @@ img {
 
   & .banner-wrapper__image-grid {
     flex-basis: 40%;
+
+    & .image-grid {
+      display: grid;
+      width: fit-content;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+
+    & .first-image { grid-area: 1 / 1 / 4 / 5; }
+    & .second-image { grid-area: 3 / 3 / 6 / 7; }
+    & .third-image { grid-area: 5 / 2 / 8 / 6; }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.3rem;
+    }
   }
 
   & .banner-title {
