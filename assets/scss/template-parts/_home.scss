@@ -1,0 +1,67 @@
+@use "../variable" as v;
+
+.image-grid {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.first-image { grid-area: 1 / 1 / 4 / 5; }
+.second-image { grid-area: 3 / 3 / 6 / 7; }
+.third-image { grid-area: 5 / 2 / 8 / 6; }
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+.banner {
+  display: flex;
+  width: 97%;
+  margin: auto;
+  font-family: 'Poppins', serif;
+
+  @media #{v.$media_mobile} {
+    flex-direction: column;
+  }
+
+  & .banner-wrapper {
+    flex-basis: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media #{v.$media_mobile} {
+      padding: 8rem 0;
+    }
+  }
+
+  & .banner-wrapper__image-grid {
+    flex-basis: 40%;
+  }
+
+  & .banner-title {
+    font-size: 7rem;
+    font-weight: 700;
+    
+    @media #{v.$media_tablet} {
+      font-size: 4rem;
+    }
+
+    @media #{v.$media_mobile} {
+      font-size: 3rem;
+    }
+  }
+
+  & .banner-hr {
+    height: 2px;
+    width: 70%;
+    margin-top: 2rem;
+    background-color: #036F33;
+  }
+}
