@@ -1,0 +1,85 @@
+@use "variable" as v;
+
+.site-header {
+  .header-wrapper {
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+
+    & a, .site-title{
+      font-family: 'Poppins', serif;
+      color: black;
+      margin: 0;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    & > * {
+      display: flex;
+      width: 100%;
+    }
+
+    // Site Icon container
+    & .site-branding {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & .site-title:hover {
+        text-decoration: underline;
+      }
+    }
+
+    & .main-navigation {
+
+      // Mobile Header
+      & .mobile-header {
+        margin-left: auto;
+        justify-content: end;
+        align-items: center;
+
+        & .hamburger-btn {
+          border: 1px solid v.$grey;
+          border-radius: 0;
+          color: v.$grey;
+          font-size: 2rem;
+
+          &:hover {
+            border-color: black;
+            color: black;
+          }
+        }
+
+        // Canvas
+        & .menu-canvas {
+          width: 85%;
+        }
+
+        & .offcanvas-header {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        & .offcanvas-body {
+          & ul {
+            margin: 0;
+            padding: 0;
+          }
+
+          & li {
+            list-style-type: none;
+
+            &.current_page_item, &:hover {
+              font-weight: bold;
+            }
+          }
+
+          & a {
+            color: black;
+
+          }
+        }
+      }
+    }
+  }
+}

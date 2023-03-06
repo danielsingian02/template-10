@@ -1,0 +1,14 @@
+@use "header";
+@use "footer";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', san-serif;
+}
+
+// CSS for the site logo
+.custom-logo {
+  max-width: 105px;
+  height: auto;
+}

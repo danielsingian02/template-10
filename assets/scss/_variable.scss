@@ -1,0 +1,18 @@
+$primary-color : #094DA2;
+$secondary-color : #4086E5;
+$white : #FFF;
+$black : #000;
+$grey  : #C7C7C7;
+
+$media_desktop      : "only screen and (max-width: 1200px)";
+$media_tablet       : "only screen and (max-width: 1024px)";
+$media_tablet_xs    : "only screen and (max-width: 991px)";
+$media_mobile       : "only screen and (max-width: 767px)";
+$media_mobile_sm    : "only screen and (max-width: 425px)";
+$media_mobile_xs    : "only screen and (max-width: 375px)";
+
+// Importing Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+// Importing Poppins
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
