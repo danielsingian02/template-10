@@ -27,6 +27,9 @@ $banner_section = get_field( 'banner_section' );
 $cta_display_section = get_field( 'we_live_together_display_section' );
 $cta = get_field( 'we_live_together_as_one' );
 
+$background_img_display_section = get_field( 'background_image_display_section' );
+$background_img = get_field( 'background_image' );
+
 
 //echo "<pre>";
 //var_dump($banner_section);
@@ -54,8 +57,18 @@ get_header();
                     array( "data" => $cta )
                 );
             }
+
+            if ( $background_img_display_section ) {
+                get_template_part(
+                    'template-parts/components/background_image',
+                    '',
+                array( "data" => $background_img )
+                );
+            }
         ?>
     </main>
+
+
 
 <?php
 get_footer();

@@ -232,6 +232,12 @@
   }
 }
 
+.homepage-background-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
 html {
   max-width: 1440px;
   margin: auto;
