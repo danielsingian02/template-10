@@ -70,6 +70,11 @@
   max-width: 125px;
   width: 100%;
 }
+.site-footer .site-title, .site-footer .site-title > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
 .site-footer .footer-content {
   width: 70%;
   margin: auto;

@@ -16,7 +16,7 @@
             <div class="footer-content__wrapper footer-content__text">
                 <div class="site-footer-icon">
                     <?php
-                    if ( function_exists('the_custom_logo') && (! empty(get_custom_logo())) ) :
+                    if ( ! function_exists('the_custom_logo') && (! empty(get_custom_logo())) ) :
                         the_custom_logo(); ?>
                     <?php
                     else :

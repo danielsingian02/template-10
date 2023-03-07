@@ -8,6 +8,12 @@
     width: 100%;
   }
 
+  & .site-title, .site-title > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+
   .footer-content {
     width: 70%;
     margin: auto;
