@@ -6,7 +6,8 @@
     width: 90%;
     margin-left: auto;
 
-    & a, .site-title{
+    & a,
+    .site-title {
       font-family: 'Poppins', serif;
       color: black;
       margin: 0;
@@ -14,7 +15,7 @@
       width: fit-content;
     }
 
-    & > * {
+    &>* {
       display: flex;
       width: 100%;
     }
@@ -72,7 +73,8 @@
           & li {
             list-style-type: none;
 
-            &.current_page_item, &:hover {
+            &.current_page_item,
+            &:hover {
               font-weight: bold;
             }
           }
